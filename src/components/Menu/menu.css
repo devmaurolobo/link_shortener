@@ -1,0 +1,20 @@
+.menu{
+    position: absolute;
+    top: 20px;
+    right: 10%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.menu-item{
+    color:black;
+    background-color: white;
+    padding: 12px 12px;
+    border-radius: 8px;
+}

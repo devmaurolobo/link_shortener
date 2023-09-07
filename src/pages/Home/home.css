@@ -1,0 +1,100 @@
+.container-home{
+    width: 100%;
+    height: 100vh;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;   
+}
+
+
+
+.input-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    gap: 5px;
+    margin-top: 5px;
+    animation: slideY 2s;
+}
+
+.input-area div{
+    display: flex;
+    width: 350px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    align-items: center;
+    text-align: center; 
+    background-color: rgb(255,255,255,0.15);
+}
+
+.input-area svg{
+    margin: 5px 5px;
+}
+
+.input-area input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    margin: 0;
+    color: white;
+    
+}
+
+/*Animação subindo area input*/
+@keyframes slideY {
+    from{
+        transform: translateY(90px);
+
+    }
+    to{
+        transform: translateY(00px);
+    }
+}
+
+.input-area input::placeholder{
+    color: rgb(255, 255, 255, 0.35);
+}
+.input-area button{
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    outline: none; 
+    transition: transform 1.5s;
+    font-size: 18px;
+}
+
+.input-area button:hover{
+    transform: scale(1.05);
+}
+
+@media(max-width: 700px){
+    .logo img {
+        width: 250px;
+    }
+
+    .logo h1{
+        font-size: 30px;
+    }
+
+    .logo span{
+        font-size: 15px;
+    }
+
+    .input-area{
+        width: 85%;
+    }
+
+    .input-area div{
+        width: 100%;
+    }
+}
